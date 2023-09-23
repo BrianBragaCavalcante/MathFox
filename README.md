@@ -4,7 +4,10 @@ A library with math functions to help **Python** developers with their projects.
 
 In total, we have **34** functions!
 
-[**MathFox** link on **PYPI**](https://pypi.org/project/mathfox)
+## MathFox link on:
+[**PYPI**](https://pypi.org/project/mathfox)
+<br>
+[**GitHub**](https://github.com/PipocaFox/MathFox)
 
 ---
 
@@ -17,7 +20,7 @@ Library creation.
 
 ---
 
-## library structure
+## Library structure
 - mathfox
   
     - math
