@@ -6,8 +6,12 @@ In total, we have **34** functions!
 
 ## MathFox link on:
 [**PYPI**](https://pypi.org/project/mathfox)
-<br>
+
+<div style="display: flex; align-items: center;">
+    <img src="C:\Users\User\Downloads\github-logo.png" alt="" width="20" height="20" />
+
 [**GitHub**](https://github.com/PipocaFox/MathFox)
+</div>
 
 ---
 
@@ -36,6 +40,8 @@ Library creation.
 ## Math
 
 16 functions + 12 area function
+
+<br>
 
 ### - `sumlist(list)`
 
@@ -231,7 +237,75 @@ X2 = {x2}''')
 
 ### Two dimensions
 
+<br>
 
+### - `square(side)`
+```python
+import mathfox
+side = 2
+area = mathfox.math.area.two_dimensions.square(side)
+print(area)
+```
+> **4**
+
+<br>
+
+### - `rectangle(height, base)`
+```python
+import mathfox
+height = 4
+base = 2
+area = mathfox.math.area.two_dimensions.rectangle(height, base)
+print(area)
+```
+> **8**
+
+<br>
+
+### - `right_triangle(height, base)`
+```python
+import mathfox
+height = 7
+base = 3
+area = mathfox.math.area.two_dimensions.right_triangle(height, base)
+print(area)
+```
+> **10.5**
+
+<br>
+
+### - `equilateral_triangle(side)`
+```python
+import mathfox
+side = 6
+area = mathfox.math.area.two_dimensions.equilateral_triangle(side)
+print(area)
+```
+> **15.588457268119894**
+
+<br>
+
+### - `pentagon(side)`
+```python
+import mathfox
+side = 5
+area = mathfox.math.area.two_dimensions.pentagon(side)
+print(area)
+```
+> **43.01193501472417**
+
+<br>
+
+### - `hexagon(side)`
+```python
+import mathfox
+side = 6
+area = mathfox.math.area.two_dimensions.hexagon(side)
+print(area)
+```
+> **93.53074360871938**
+
+<br>
 
 
 ---
