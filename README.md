@@ -6,12 +6,8 @@ In total, we have **34** functions!
 
 ## MathFox link on:
 [**PYPI**](https://pypi.org/project/mathfox)
-
-<div style="display: flex; align-items: center;">
-    <img src="C:\Users\User\Downloads\github-logo.png" alt="" width="20" height="20" />
-
+<br>
 [**GitHub**](https://github.com/PipocaFox/MathFox)
-</div>
 
 ---
 
