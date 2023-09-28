@@ -13,7 +13,7 @@ In total, we have **34** functions!
 
 ## Versions
 
-- [**1.0.1**](https://pypi.org/project/mathfox/1.0.1/) **---**
+- [**1.0.2**](https://pypi.org/project/mathfox/1.0.1/) **---**
 Correction of the `chance()` function, improvement of the `isint()` and `isfloat()` functions, creation of more decent documentation.
 - [**1.0.0**](https://pypi.org/project/mathfox/1.0.0/) **---** 
 Library creation.
