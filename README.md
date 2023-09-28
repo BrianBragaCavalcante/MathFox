@@ -457,7 +457,7 @@ print(f'num1: {isint1}\nnum2: {isint2}\nnum3: {isint3}')
 
 <br>
 
-### - `isint(num, decimal=True)`
+### - `isfloat(num, comma=False, convert=False, integer=True)`
 ```python
 import mathfox
 num1 = 5.8
@@ -471,6 +471,7 @@ print(f'num1: {isfloat1}\nnum2: {isfloat2}\nconvert: {covert}\nnum3: {isfloat3}'
 > **num1: True**
 >
 > **num2: True**
+> 
 > **convert: 2.5**
 > 
 >  **num3: False**
