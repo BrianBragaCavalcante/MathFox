@@ -13,8 +13,8 @@ In total, we have **34** functions!
 
 ## Versions
 
-- [**1.0.1**](https://pypi.org/project/mathfox/1.0.1/) **---** 
-Correction of the `Chance()` function and creation of more decent documentation.
+- [**1.0.1**](https://pypi.org/project/mathfox/1.0.1/) **---**
+Correction of the `chance()` function, improvement of the `isint()` and `isfloat()` functions, creation of more decent documentation.
 - [**1.0.0**](https://pypi.org/project/mathfox/1.0.0/) **---** 
 Library creation.
 
@@ -208,6 +208,10 @@ print(log)
 ```python
 import mathfox
 a, b, c = 35, 100, 40
+
+# a -- b
+# c -- x
+
 result = mathfox.math.rule_of_three(a, b, c)
 print(result)
 ```
@@ -303,13 +307,170 @@ print(area)
 
 <br>
 
+### - `polygon(side, sides)`
+```python
+import mathfox
+side = 4
+sides = 7
+area = mathfox.math.area.two_dimensions.polygon(side, sides)
+print(area)
+```
+> **58.14259910402543**
+
+<br>
+
+### - `circle(radius)`
+```python
+import mathfox
+radius = 2
+area = mathfox.math.area.two_dimensions.circle(radius)
+print(area)
+```
+> **12.5663706143591724639918538741767406463623046875**
+
+<br>
+
+### Three dimensions
+
+<br>
+
+### - `cube(edge)`
+```python
+import mathfox
+edge = 5
+area = mathfox.math.area.three_dimensions.cube(edge)
+print(area)
+```
+> **125**
+
+<br>
+
+### - `parallelepiped(height, width, depth)`
+```python
+import mathfox
+height = 5
+width = 4
+depth = 3
+area = mathfox.math.area.three_dimensions.parallelepiped(height, width, depth)
+print(area)
+```
+> **60**
+
+<br>
+
+### - `cylinder(height, radius)`
+```python
+import mathfox
+height = 5
+radius = 4
+area = mathfox.math.area.three_dimensions.cylinder(height, radius)
+print(area)
+```
+> **251.327412287183449279837077483534812927246093750**
+
+<br>
+
+### - `sphere(radius)`
+```python
+import mathfox
+radius = 6
+area = mathfox.math.area.three_dimensions.sphere(radius)
+print(area)
+```
+> **452.389342116930208703706739470362663269042968750**
 
 ---
 
 ## Number
 3 functions
 
+<br>
+
+### - `prime(count)`
+```python
+import mathfox
+count = 5
+primes = mathfox.number.prime(count)
+print(primes)
+```
+> **[2, 3, 5, 7, 11]**
+
+<br>
+
+### - `pi(count=48)`
+```python
+import mathfox
+pi1 = mathfox.number.pi()
+pi2 = mathfox.number.pi(5)
+print(f'PI1: {pi1}\nPI2: {pi2}')
+```
+> **PI1: 3.141592653589793115997963468544185161590576171875**
+> 
+> **PI2: 3.14159**
+
+<br>
+
+### - `inf()`
+```python
+import mathfox
+from time import sleep
+inf = mathfox.number.inf()
+sleep(inf) # It will wait infinite seconds, that is, the command will stop there.
+```
+
 ---
 
 ## Numis
 3 functions
+
+<br>
+
+### - `isprime(num)`
+```python
+import mathfox
+num1 = 3
+num2 = 10
+isprime1 = mathfox.numis.isprime(num1)
+isprime2 = mathfox.numis.isprime(num2)
+print(f'num1: {isprime1}\nnum2: {isprime2}')
+```
+> **num1: True**
+>
+> **num2: False**
+
+### - `isint(num, decimal=True)`
+```python
+import mathfox
+num1 = 5
+num2 = 2.5
+num3 = 4.2
+isint1 = mathfox.numis.isint(num1)
+isint2 = mathfox.numis.isint(num2, decimal=False)
+isint3 = mathfox.numis.isint(num3)
+print(f'num1: {isint1}\nnum2: {isint2}\nnum3: {isint3}')
+```
+> **num1: True**
+>
+> **num2: False**
+> 
+>  **num3: True**
+
+<br>
+
+### - `isint(num, decimal=True)`
+```python
+import mathfox
+num1 = 5.8
+num2 = '2,5'
+num3 = 4.2
+isfloat1 = mathfox.numis.isfloat(num1)
+isfloat2, covert = mathfox.numis.isfloat(num2, convert=True, comma=True)
+isfloat3 = mathfox.numis.isfloat(num3, integer=False)
+print(f'num1: {isfloat1}\nnum2: {isfloat2}\nconvert: {covert}\nnum3: {isfloat3}')
+```
+> **num1: True**
+>
+> **num2: True**
+> **convert: 2.5**
+> 
+>  **num3: False**
