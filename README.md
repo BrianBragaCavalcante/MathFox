@@ -13,7 +13,7 @@ In total, we have **36** functions and **1** class!
 
 ## Versions
 - [**1.0.3**](https://pypi.org/project/mathfox/1.0.3/) **LATTER** **---**
-Removal of the `sumlist()` function, creation of the `fraction()` class, and creation of a new category in the math category, which is geometry, within which there will be the area category (which was redefined), and the trigonometry category, which will have, in addition to the `sin()` functions, `cos()`, and `tan()`, will have the functions `asin()`, `acos()` and `atan()`.
+Removal of the `sumlist()` function, creation of the `fraction()` class, and creation of a new category in the **math** category, which is **geometry**, within which there will be the **area** category (which was redefined), and the **trigonometry** category, which will have, in addition to the `sin()` functions, `cos()`, and `tan()`, will have the functions `asin()`, `acos()` and `atan()`.
 - [**1.0.2**](https://pypi.org/project/mathfox/1.0.2/) **---**
 Correction of the `chance()` function, improvement of the `isint()` and `isfloat()` functions, creation of more decent documentation.
 - [**1.0.0**](https://pypi.org/project/mathfox/1.0.0/) **---** 
