@@ -37,7 +37,7 @@ Library creation.
 
 ## Math
 
-15 functions + 12 area function + 6 trigonometry functions
+15 functions + 19 geometry function
 
 ### - `sublist(list)`
 ```python
@@ -170,7 +170,7 @@ X2 = {x2}''')
 ---
 
 ## Geometry
-
+12 area function + 6 trigonometry functions
 ## Area
 
 ### Two dimensions
