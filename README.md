@@ -2,7 +2,7 @@
 
 A library with math functions to help **Python** developers with their projects.
 
-In total, we have **34** functions!
+In total, we have **36** functions and **1** class!
 
 ## MathFox link on:
 [**PYPI**](https://pypi.org/project/mathfox)
@@ -12,7 +12,8 @@ In total, we have **34** functions!
 ---
 
 ## Versions
-
+- [**1.0.3**](https://pypi.org/project/mathfox/1.0.3/) **LATTER** **---**
+Removal of the `sumlist()` function, creation of the `fraction()` class, and creation of a new category in the math category, which is geometry, within which there will be the area category (which was redefined), and the trigonometry category, which will have, in addition to the `sin()` functions, `cos()`, and `tan()`, will have the functions `asin()`, `acos()` and `atan()`.
 - [**1.0.2**](https://pypi.org/project/mathfox/1.0.2/) **---**
 Correction of the `chance()` function, improvement of the `isint()` and `isfloat()` functions, creation of more decent documentation.
 - [**1.0.0**](https://pypi.org/project/mathfox/1.0.0/) **---** 
@@ -22,11 +23,12 @@ Library creation.
 
 ## Library structure
 - mathfox
-  
     - math
-      - area
-        - two_dimensions
-        - three_dimensions
+      - geometry
+          - area
+            - two_dimensions
+            - three_dimensions
+          - trigonometry
     - number
     - numis
   
@@ -35,21 +37,7 @@ Library creation.
 
 ## Math
 
-16 functions + 12 area function
-
-<br>
-
-### - `sumlist(list)`
-
-```python
-import mathfox
-list = [1, 2, 4, 4]
-sum = mathfox.math.sumlist(list)
-print(sum)
-```
-> **11**
-
-<br>
+15 functions + 12 area function + 6 trigonometry functions
 
 ### - `sublist(list)`
 ```python
@@ -60,8 +48,6 @@ print(sub)
 ```
 > **1**
 
-<br>
-
 ### - `multlist(list)`
 ```python
 import mathfox
@@ -70,8 +56,6 @@ mult = mathfox.math.multlist(list)
 print(mult)
 ```
 > **16**
-
-<br>
 
 ### - `divlist(list)`
 ```python
@@ -82,8 +66,6 @@ print(div)
 ```
 > **0.25**
 
-<br>
-
 ### - `medium(*num)`
 ```python
 import mathfox
@@ -92,8 +74,6 @@ medium = mathfox.math.medium(list, 2)
 print(medium)
 ```
 > **5.8**
-
-<br>
 
 ### - `root(num, ind)`
 ```python
@@ -105,8 +85,6 @@ print(root)
 ```
 > **11.0**
 
-<br>
-
 ### - `factorial(num)`
 ``` python
 import mathfox
@@ -115,8 +93,6 @@ factorial = mathfox.math.factorial(num)
 print(factorial)
 ```
 > **120**
-
-<br>
 
 ### - `lcm(*num, result=False)`
 ```python
@@ -129,8 +105,6 @@ print(f'{lcm1}\n{lcm2}')
 > **{2: 3, 3: 2, 13: 1}** <br>
 > **{2: 3, 3: 2, 'result': 72}**
 
-<br>
-
 ### - `gcm(*num, result=False)`
 ```python
 import mathfox
@@ -142,40 +116,6 @@ print(f'{gcd1}\n{gcd2}')
 > **{2: 2}** <br>
 > **{2: 2', result': 4}**
 
-<br>
-
-### - `sin(num)`
-```python
-import mathfox
-num = 30
-sin = mathfox.math.sin(num)
-print(sin)
-```
-> **-0.9880316240928618**
-
-<br>
-
-### - `cos(num)`
-```python
-import mathfox
-num = 45
-cos = mathfox.math.cos(num)
-print(cos)
-```
-> **0.5253219888177297**
-
-<br>
-
-### - `tan(num)`
-```python
-import mathfox
-num = 60
-tan = mathfox.math.tan(num)
-print(tan)
-```
-> **0.320040389379563**
-
-<br>
 
 ### - `chance(percentage)`
 ```python
@@ -202,8 +142,6 @@ print(log)
 ```
 > **1.5849625007211563**
 
-<br>
-
 ### - `rule_of_three(a, b, c)`
 ```python
 import mathfox
@@ -217,8 +155,6 @@ print(result)
 ```
 > **114.28571428571429**
 
-<br>
-
 ### - `bhaskara(a, b, c)`
 ```python
 import mathfox
@@ -231,7 +167,9 @@ X2 = {x2}''')
 > 
 > **X2 = 3.0**
 
-<br>
+---
+
+## Geometry
 
 ## Area
 
@@ -243,92 +181,76 @@ X2 = {x2}''')
 ```python
 import mathfox
 side = 2
-area = mathfox.math.area.two_dimensions.square(side)
+area = mathfox.math.geometry.area.two_dimensions.square(side)
 print(area)
 ```
 > **4**
-
-<br>
 
 ### - `rectangle(height, base)`
 ```python
 import mathfox
 height = 4
 base = 2
-area = mathfox.math.area.two_dimensions.rectangle(height, base)
+area = mathfox.math.geometry.area.two_dimensions.rectangle(height, base)
 print(area)
 ```
 > **8**
-
-<br>
 
 ### - `right_triangle(height, base)`
 ```python
 import mathfox
 height = 7
 base = 3
-area = mathfox.math.area.two_dimensions.right_triangle(height, base)
+area = mathfox.math.geometry.area.two_dimensions.right_triangle(height, base)
 print(area)
 ```
 > **10.5**
-
-<br>
 
 ### - `equilateral_triangle(side)`
 ```python
 import mathfox
 side = 6
-area = mathfox.math.area.two_dimensions.equilateral_triangle(side)
+area = mathfox.math.geometry.area.two_dimensions.equilateral_triangle(side)
 print(area)
 ```
 > **15.588457268119894**
-
-<br>
 
 ### - `pentagon(side)`
 ```python
 import mathfox
 side = 5
-area = mathfox.math.area.two_dimensions.pentagon(side)
+area = mathfox.math.geometry.area.two_dimensions.pentagon(side)
 print(area)
 ```
 > **43.01193501472417**
-
-<br>
 
 ### - `hexagon(side)`
 ```python
 import mathfox
 side = 6
-area = mathfox.math.area.two_dimensions.hexagon(side)
+area = mathfox.math.geometry.area.two_dimensions.hexagon(side)
 print(area)
 ```
 > **93.53074360871938**
-
-<br>
 
 ### - `polygon(side, sides)`
 ```python
 import mathfox
 side = 4
 sides = 7
-area = mathfox.math.area.two_dimensions.polygon(side, sides)
+area = mathfox.math.geometry.area.two_dimensions.polygon(side, sides)
 print(area)
 ```
 > **58.14259910402543**
-
-<br>
 
 ### - `circle(radius)`
 ```python
 import mathfox
 radius = 2
-area = mathfox.math.area.two_dimensions.circle(radius)
+area = mathfox.math.geometry.area.two_dimensions.circle(radius)
 print(area)
 ```
 > **12.5663706143591724639918538741767406463623046875**
-
-<br>
 
 ### Three dimensions
 
@@ -338,12 +260,10 @@ print(area)
 ```python
 import mathfox
 edge = 5
-area = mathfox.math.area.three_dimensions.cube(edge)
+area = mathfox.math.geometry.area.three_dimensions.cube(edge)
 print(area)
 ```
 > **125**
-
-<br>
 
 ### - `parallelepiped(height, width, depth)`
 ```python
@@ -351,38 +271,95 @@ import mathfox
 height = 5
 width = 4
 depth = 3
-area = mathfox.math.area.three_dimensions.parallelepiped(height, width, depth)
+area = mathfox.math.geometry.area.three_dimensions.parallelepiped(height, width, depth)
 print(area)
 ```
 > **60**
-
-<br>
 
 ### - `cylinder(height, radius)`
 ```python
 import mathfox
 height = 5
 radius = 4
-area = mathfox.math.area.three_dimensions.cylinder(height, radius)
+area = mathfox.math.geometry.area.three_dimensions.cylinder(height, radius)
 print(area)
 ```
 > **251.327412287183449279837077483534812927246093750**
-
-<br>
 
 ### - `sphere(radius)`
 ```python
 import mathfox
 radius = 6
-area = mathfox.math.area.three_dimensions.sphere(radius)
+area = mathfox.math.geometry.area.three_dimensions.sphere(radius)
 print(area)
 ```
 > **452.389342116930208703706739470362663269042968750**
 
+## Trigonometry
+
+### - `sin(num)`
+```python
+import mathfox
+num = 30
+sin = mathfox.math.geometry.trigonometry.sin(num)
+print(sin)
+```
+> **-0.9880316240928618**
+<br>
+
+### - `cos(num)`
+```python
+import mathfox
+num = 45
+cos = mathfox.math..geometry.trigonometry.cos(num)
+print(cos)
+```
+> **0.5253219888177297**
+<br>
+
+### - `tan(num)`
+```python
+import mathfox
+num = 60
+tan = mathfox.math.geometry.trigonometry.tan(num)
+print(tan)
+```
+> **0.320040389379563**
+<br>
+
+### - `asin(num)`
+```python
+import mathfox
+num = 30
+sin = mathfox.math.geometry.trigonometry.asin(num)
+print(sin)
+```
+> **-0.9880316240928618**
+<br>
+
+### - `acos(num)`
+```python
+import mathfox
+num = 45
+cos = mathfox.math.geometry.trigonometry.acos(num)
+print(cos)
+```
+> **0.5253219888177297**
+<br>
+
+### - `atan(num)`
+```python
+import mathfox
+num = 60
+tan = mathfox.math.geometry.trigonometry.atan(num)
+print(tan)
+```
+> **0.320040389379563**
+<br>
 ---
 
 ## Number
-3 functions
+3 functions and 1 class
 
 <br>
 
@@ -395,8 +372,6 @@ print(primes)
 ```
 > **[2, 3, 5, 7, 11]**
 
-<br>
-
 ### - `pi(count=48)`
 ```python
 import mathfox
@@ -408,8 +383,6 @@ print(f'PI1: {pi1}\nPI2: {pi2}')
 > 
 > **PI2: 3.14159**
 
-<br>
-
 ### - `inf()`
 ```python
 import mathfox
@@ -417,6 +390,25 @@ from time import sleep
 inf = mathfox.number.inf()
 sleep(inf) # It will wait infinite seconds, that is, the command will stop there.
 ```
+
+### - `Fraction()`
+```python
+import mathfox
+fraction1 = mathfox.number.Fraction(numerator=9, denominator=12)
+fraction2 = mathfox.number.Fraction(num=0.02)
+print(f'''
+fraction 1 = {fraction1}; result = {fraction1.result()}
+fraction 2 = {fraction2}; result = {fraction2.result()}
+''')
+fraction1.simplification()
+print(f'simplification = {fraction1}')
+```
+> **fraction 1 = 9 / 12; result = 0.75**
+> 
+> **fraction 2 = 1 / 50; result = 0.02**
+> 
+> **simplification = 3 / 4**
+
 
 ---
 
@@ -455,7 +447,6 @@ print(f'num1: {isint1}\nnum2: {isint2}\nnum3: {isint3}')
 > 
 >  **num3: True**
 
-<br>
 
 ### - `isfloat(num, comma=False, convert=False, integer=True)`
 ```python
