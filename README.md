@@ -14,7 +14,7 @@ license **MIT**
 </div>
 <div style="display: flex; align-items: center;">
     <img src=https://cdn-icons-png.flaticon.com/512/25/25231.png alt="" width="30" height="30">
-    <p style="margin-left: 10px;"><a href=https://pypi.org/project/mathfox><strong>Github</strong></a></p>
+    <p style="margin-left: 10px;"><a href=https://github.com/PipocaFox/MathFox><strong>Github</strong></a></p>
 </div>
 
 
@@ -23,7 +23,7 @@ license **MIT**
 
 ## Versions
 - [**v1.1.0**](https://pypi.org/project/mathfox/1.1.0/) **LATTER** **---**
-Removal of the `sumlist()` function, creation of the `Fraction()` class, renaming of the `isfloat()` function to `isdecimal()` and **math** category for **calculation** category, creation of a new category in the **math** category, which is **geometry**, within it will be the **calculation** category (which has been redefined), and the **trigonometry** category, which will have, in addition to the ``sin()``, ``cos()`` and ``tan()`` functions, it will have the ``asin()``, ``acos()`` and ``atan()`` functions.
+Removal of the `sumlist()` function, creation of the `Fraction()` class, renaming of the `isfloat()` function to `isdecimal()` and **math** category for **calculation** category, creation of a new category in the **calculation** category, which is **geometry**, within it will be the **area** category (which has been redefined), and the **trigonometry** category, which will have, in addition to the ``sin()``, ``cos()`` and ``tan()`` functions, it will have the ``asin()``, ``acos()`` and ``atan()`` functions.
 - [**v1.0.2**](https://pypi.org/project/mathfox/1.0.2/) **---**
 Correction of the `chance()` function, improvement of the `isint()` and `isfloat()` functions, creation of more decent documentation.
 - [**v1.0.0**](https://pypi.org/project/mathfox/1.0.0/) **---** 
@@ -53,3 +53,11 @@ pip install mathfox
 
 ---
 
+## Documentation
+
+<div style="display: flex; align-items: center;">
+    <img src=https://cdn-icons-png.flaticon.com/512/25/25231.png alt="" width="30" height="30">
+    <p style="margin-left: 10px;"><a href=https://github.com/PipocaFox/MathFox/blob/main/DOCUMENTATION.md><strong>LINK</strong></a></p>
+</div>
+
+---
