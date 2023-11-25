@@ -77,7 +77,7 @@ print(f'{lcm1}\n{lcm2}')
 import mathfox
 list = [8, 4]
 gcd1 = mathfox.calculation.gcd(list, 16)
-gcd2 = mathfox.calculation.gcd(list, result=True)
+gcd2 = mathfox.calculation.gcd(list, result=True)  
 print(f'{gcd1}\n{gcd2}')
 ```
 > **{2: 2}** <br>
@@ -88,7 +88,7 @@ print(f'{gcd1}\n{gcd2}')
 ```python
 import mathfox
 percentage = 50
-result = mathfox.calculation.chance(percentage)
+result = mathfox.calculation.chance(percentage) #has a 50% chance of returning True or False
 print(result)
 ```
 > **True**
@@ -109,18 +109,23 @@ print(log)
 ```
 > **1.5849625007211563**
 
-### - `rule_of_three(a, b, c)`
+### - `rule_of_three(a, b, c, invert=False)`
 ```python
 import mathfox
-a, b, c = 35, 100, 40
+a, b, c = 100, 30, 50
 
 # a -- b
 # c -- x
 
-result = mathfox.calculation.rule_of_three(a, b, c)
-print(result)
+result_normal = mathfox.calculation.rule_of_three(a, b, c)
+result_invert = mathfox.calculation.rule_of_three(a, b, c, invert=True)
+
+print(f'normal = {result_normal}')
+print(f'invert = {result_invert}')
 ```
-> **114.28571428571429**
+> **normal = 30.0**
+> 
+> **invert = 60.0**
 
 ### - `bhaskara(a, b, c)`
 ```python
@@ -369,7 +374,7 @@ fraction 2 = {fraction2}; result = {fraction2.result}
 ''')
 fraction1.simplification()
 print(f'simplification = {fraction1}')
-print(f'sum = {fraction1 + fraction2}')
+print(f'Sum = {fraction1 + fraction2}')
 print(fraction1 > fraction2)
 ```
 > **fraction 1 = 9 / 12; result = 0.75**
@@ -378,7 +383,7 @@ print(fraction1 > fraction2)
 > 
 > **simplification = 3 / 4**
 > 
-> **sum = 77 / 100**
+> **Sum = 77 / 100**
 > 
 > **True**
 
@@ -421,21 +426,19 @@ print(f'num1: {isint1}\nnum2: {isint2}\nnum3: {isint3}')
 >  **num3: True**
 
 
-### - `isfloat(num, comma=False, convert=False, integer=True)`
+### - `isdecimal(num, comma=False, convert=False, integer=True decimal_places=False)`
 ```python
 import mathfox
-num1 = 5.8
+num1 = 5.84
 num2 = '2,5'
-num3 = 4.2
-isfloat1 = mathfox.numis.isfloat(num1)
-isfloat2, covert = mathfox.numis.isfloat(num2, convert=True, comma=True)
-isfloat3 = mathfox.numis.isfloat(num3, integer=False)
-print(f'num1: {isfloat1}\nnum2: {isfloat2}\nconvert: {covert}\nnum3: {isfloat3}')
+num3 = 4
+isfloat1, decimal_places = mathfox.numis.isdecimal(num1, decimal_places=True)
+isfloat2, covert = mathfox.numis.isdecimal(num2, convert=True, comma=True)
+isfloat3 = mathfox.numis.isdecimal(num3, integer=False)
+print(f'Num1: {isfloat1}; decimal places: {decimal_places}\nNum2: {isfloat2}; convert: {covert}\nNum3: {isfloat3}')
 ```
-> **num1: True**
+> **Num1: True; decimal places: 2**
 >
-> **num2: True**
+> **Num2: True; convert: 2.5**
 > 
-> **convert: 2.5**
-> 
->  **num3: False**
+> **Num3: False**
