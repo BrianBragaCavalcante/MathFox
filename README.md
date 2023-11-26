@@ -22,7 +22,7 @@ In total, we have **39** functions, **1** variable and **1** class!
 
 ## Versions
 - [**v1.1.1**](https://pypi.org/project/mathfox/1.1.1/) **LATTER** **---**
-improvement in trigonometric functions and addition of ``cot()``, ``sec()`` and ``csc()`` functions.
+improvement of trigonometric functions and addition of the ``cot()``, ``sec()`` and ``csc()`` functions, in addition to the ``radians()`` function which is in the **calculation** category 
 - [**v1.1.0**](https://pypi.org/project/mathfox/1.1.0/) **---**
 Removal of the `sumlist()` function, creation of the `Fraction()` class, renaming of the `isfloat()` function to `isdecimal()` and **math** category for **calculation** category, creation of a new category in the **calculation** category, which is **geometry**, within it will be the **area** category (which has been redefined), and the **trigonometry** category, which will have, in addition to the ``sin()``, ``cos()`` and ``tan()`` functions, it will have the ``asin()``, ``acos()`` and ``atan()`` functions.
 - [**v1.0.2**](https://pypi.org/project/mathfox/1.0.2/) **---**
