@@ -15,6 +15,8 @@ print(sub)
 ```
 > **1**
 
+<br>
+
 ### - `multlist(list)`
 ```python
 import mathfox
