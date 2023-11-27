@@ -48,7 +48,7 @@ Library creation.
 ---
 
 ## Installation
-Open [**CMD**](C:\Windows\System32\cmd.exe) and write:
+Open **CMD** and write:
 ```
 pip install --upgrade mathfox
 ```
