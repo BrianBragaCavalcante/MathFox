@@ -1,4 +1,4 @@
-![mathfoxlog](https://github.com/PipocaFox/MathFox/assets/114585145/35e369de-6110-487c-9dcb-8b34e254ad6c)
+![MathFox](https://github.com/PipocaFox/MathFox/assets/114585145/35e369de-6110-487c-9dcb-8b34e254ad6c)
 
 A library with math functions to help **Python** developers with their projects.
 
@@ -6,7 +6,7 @@ In total, we have **39** functions, **1** variable and **1** class!
 
 [![GitHub License](https://img.shields.io/github/license/PipocaFox/MathFox?color=orange)](https://github.com/PipocaFox/MathFox/blob/main/LICENCE)
 ![PyPI - Version](https://img.shields.io/pypi/v/MathFox?label=version)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mathfox?color=green)
+![Python Version](https://img.shields.io/badge/python-%3E%3D3.6-green)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/PipocaFox/MathFox?logo=github&color=red)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/mathfox?logo=pypi&logoColor=white&color=yellow)
 
