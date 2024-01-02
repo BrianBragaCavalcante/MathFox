@@ -1,4 +1,6 @@
-![MathFox](https://github.com/PipocaFox/MathFox/assets/114585145/35e369de-6110-487c-9dcb-8b34e254ad6c)
+![MathFox](https://github.com/PipocaFox/MathFox/assets/114585145/60aa9f15-3796-4b6c-81f9-6663075fcb19)
+
+---
 
 A library with math functions to help **Python** developers with their projects.
 
