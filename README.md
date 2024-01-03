@@ -15,7 +15,7 @@ In total, we have **44** functions, **1** variable and **2** class!
 [![Static Badge](https://img.shields.io/badge/Documentation-%20?logo=github&color=black)](https://github.com/PipocaFox/MathFox/blob/main/DOCUMENTATION.md)
 
 
-### MathFox link on:
+### 🔗 MathFox link on:
 
 [![Static Badge](https://img.shields.io/badge/Github-%20?logo=github&color=black)](https://github.com/PipocaFox/MathFox)
 [![Static Badge](https://img.shields.io/badge/PYPI-%20?logo=pypi&logoColor=white&color=blue)](https://pypi.org/project/mathfox)
@@ -23,12 +23,12 @@ In total, we have **44** functions, **1** variable and **2** class!
 
 ---
 
-## Versions
-- [**v1.1.2b1**](https://pypi.org/project/mathfox/1.1.2b1/) **LATTER** **---**
+## 📚 Versions
+- [**v1.1.2b1**](https://pypi.org/project/mathfox/1.1.2b1/) ⚠️ <b style="color: #fcba03">LATTER</b>. **---**
 Addition of new statistical functions such as `median()`, `mode()`, `std()` and `var()`, and a new function that is `hypotenuse()`. We renamed some categories, such as **calculation** to **cal**, **geometry** to **geo** and **trigonometry** to **trigo**, and some functions such as `arcsin()`, `arccos()` and `arctan()`. We also added a new class which is `Decimal()` and a function which is `array()` which is under development, so its use is not recommended.
 
 
-- [**v1.1.1**](https://pypi.org/project/mathfox/1.1.1/) **RECOMMENDED** **---**
+- [**v1.1.1**](https://pypi.org/project/mathfox/1.1.1/) 🔒 <b style="color: #089e00">RECOMMENDED</b> **---**
 improvement of trigonometric functions and addition of the ``cot()``, ``sec()`` and ``csc()`` functions, in addition to the ``radians()`` and ``degrees()`` function which is in the **calculation** category 
 
 
@@ -44,8 +44,15 @@ Correction of the `chance()` function, improvement of the `isint()` and `isfloat
 Library creation.
 
 ---
+## 💡 Tip
 
-## Library structure
+When importing **MathFox** in the code, import it by calling it **mf**. Ex.:
+``` python
+import mathfox as mf
+```
+
+---
+## ⛓️ Library structure
 - mathfox
     - cal
       - geo
@@ -59,9 +66,9 @@ Library creation.
 
 ---
 
-## Installation
+## 💾 Installation
 
-### PYPI
+### 🐍 PYPI
 Open **CMD** and write:
 ```
 pip install --upgrade mathfox
@@ -72,7 +79,7 @@ pip install --upgrade mathfox
 pip install --upgrade --pre mathfox
 ```
 
-### Git
+### 🐱‍💻Git
 1. Open **CMD** and write:
 ```
 git clone https://github.com/PipocaFox/MathFox
