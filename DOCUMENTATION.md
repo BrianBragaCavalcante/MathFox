@@ -1,16 +1,16 @@
-# MATHFOX DOCUMENTATION
+# 📜 MATHFOX DOCUMENTATION 📜
 
 ---
 
-## Calculation
+## 🧮 Calculation
 
 20 functions + 20 geometry function
 
 ### • `sublist(list)`
 ```python
-import mathfox
+import mathfox as mf
 list = [7, 4, 2]
-sub = mathfox.cal.sublist(list)
+sub = mf.cal.sublist(list)
 print(sub)
 ```
 > **1**
@@ -19,9 +19,9 @@ print(sub)
 
 ### • `multlist(list)`
 ```python
-import mathfox
+import mathfox as mf
 list = [2, 4, 2]
-mult = mathfox.cal.multlist(list)
+mult = mf.cal.multlist(list)
 print(mult)
 ```
 > **16**
@@ -30,9 +30,9 @@ print(mult)
 
 ### • `divlist(list)`
 ```python
-import mathfox
+import mathfox as mf
 list = [1, 2, 2]
-div = mathfox.cal.divlist(list)
+div = mf.cal.divlist(list)
 print(div)
 ```
 > **0.25**
@@ -41,9 +41,9 @@ print(div)
 
 ### • `mean(*num)`
 ```python
-import mathfox
+import mathfox as mf
 list = [10, 8, 4, 5]
-medium = mathfox.cal.mean(list, 2)
+medium = mf.cal.mean(list, 2)
 print(medium)
 ```
 > **5.8**
@@ -52,10 +52,10 @@ print(medium)
 
 ### • `median(*num)`
 ```python
-import mathfox
+import mathfox as mf
 list1 = [7, 8, 3, 4, 1, 2]
 list2 = [6, 7, 3]
-median = mathfox.cal.median(list1, list2)
+median = mf.cal.median(list1, list2)
 print(median)
 ```
 > **4**
@@ -64,9 +64,9 @@ print(median)
 
 ### • `mode(*num)`
 ```python
-import mathfox
+import mathfox as mf
 list = [11, 6, 4, 5, 2]
-mode = mathfox.cal.mode(list, 2)
+mode = mf.cal.mode(list, 2)
 print(mode)
 ```
 > **2**
@@ -75,9 +75,9 @@ print(mode)
 
 ### • `std(*num)`
 ```python
-import mathfox
+import mathfox as mf
 list = [1, 4, 7, 2, 6]
-std = mathfox.cal.std(list)
+std = mf.cal.std(list)
 print(std)
 ```
 > **2.280350850198276**
@@ -86,9 +86,9 @@ print(std)
 
 ### • `var(*num)`
 ```python
-import mathfox
+import mathfox as mf
 list = [460, 800, 300, 400]
-var = mathfox.cal.var(list)
+var = mf.cal.var(list)
 print(var)
 ```
 > **35300.0**
@@ -97,10 +97,10 @@ print(var)
 
 ### • `root(num, ind)`
 ```python
-import mathfox
+import mathfox as mf
 num = 121
 ind = 2
-root = mathfox.cal.root(num, ind)
+root = mf.cal.root(num, ind)
 print(root)
 ```
 > **11.0**
@@ -109,9 +109,9 @@ print(root)
 
 ### • `factorial(num)`
 ```python
-import mathfox
+import mathfox as mf
 num = 5
-factorial = mathfox.cal.factorial(num)
+factorial = mf.cal.factorial(num)
 print(factorial)
 ```
 > **120**
@@ -120,10 +120,10 @@ print(factorial)
 
 ### • `lcm(*num, result=False)`
 ```python
-import mathfox
+import mathfox as mf
 list = [8, 9, 2]
-lcm1 = mathfox.cal.lcm(list, 13)
-lcm2 = mathfox.cal.lcm(list, result=True)
+lcm1 = mf.cal.lcm(list, 13)
+lcm2 = mf.cal.lcm(list, result=True)
 print(f'{lcm1}\n{lcm2}')
 ```
 > **{2: 3, 3: 2, 13: 1}** <br>
@@ -133,10 +133,10 @@ print(f'{lcm1}\n{lcm2}')
 
 ### • `gcm(*num, result=False)`
 ```python
-import mathfox
+import mathfox as mf
 list = [8, 4]
-gcd1 = mathfox.cal.gcd(list, 16)
-gcd2 = mathfox.cal.gcd(list, result=True)  
+gcd1 = mf.cal.gcd(list, 16)
+gcd2 = mf.cal.gcd(list, result=True)  
 print(f'{gcd1}\n{gcd2}')
 ```
 > **{2: 2}** <br>
@@ -146,9 +146,9 @@ print(f'{gcd1}\n{gcd2}')
 
 ### • `radians(num)`
 ```python
-import mathfox
+import mathfox as mf
 num = 30
-rad = mathfox.cal.radians(num)
+rad = mf.cal.radians(num)
 print(rad)
 ```
 > **0.5235987755982988**
@@ -157,9 +157,9 @@ print(rad)
 
 ### • `degrees(num)`
 ```python
-import mathfox
+import mathfox as mf
 num = 3.14159
-deg = mathfox.cal.degrees(num)
+deg = mf.cal.degrees(num)
 print(deg)
 ```
 > **179.9998479605043**
@@ -168,9 +168,9 @@ print(deg)
 
 ### • `chance(percentage)`
 ```python
-import mathfox
+import mathfox as mf
 percentage = 50
-result = mathfox.cal.chance(percentage) #has a 50% chance of returning True or False
+result = mf.cal.chance(percentage) #has a 50% chance of returning True or False
 print(result)
 ```
 > **True**
@@ -183,10 +183,10 @@ or
 
 ### • `log(exp, base)`
 ```python
-import mathfox
+import mathfox as mf
 exp = 3
 base = 2
-log = mathfox.cal.log(exp, base)
+log = mf.cal.log(exp, base)
 print(log)
 ```
 > **1.5849625007211563**
@@ -195,14 +195,14 @@ print(log)
 
 ### • `rule_of_three(a, b, c, invert=False)`
 ```python
-import mathfox
+import mathfox as mf
 a, b, c = 100, 30, 50
 
 # a -- c
 # b -- x
 
-result_normal = mathfox.cal.rule_of_three(a, b, c)
-result_invert = mathfox.cal.rule_of_three(a, b, c, invert=True)
+result_normal = mf.cal.rule_of_three(a, b, c)
+result_invert = mf.cal.rule_of_three(a, b, c, invert=True)
 
 print(f'normal = {result_normal}')
 print(f'invert = {result_invert}')
@@ -214,9 +214,9 @@ print(f'invert = {result_invert}')
 
 ### • `bhaskara(a, b, c)`
 ```python
-import mathfox
+import mathfox as mf
 a, b, c = -1, 2, 3
-x1, x2 = mathfox.cal.bhaskara(a, b, c)
+x1, x2 = mf.cal.bhaskara(a, b, c)
 print(f'''X1 = {x1}
 X2 = {x2}''')
 ```
@@ -225,15 +225,15 @@ X2 = {x2}''')
 
 ---
 
-## Geometry
+## ⚫ Geometry
 13 area function + 6 trigonometry functions
 
 ### • `hypotenuse(leg1, leg2):`
 ```python
-import mathfox
+import mathfox as mf
 leg1 = 3
 leg2 = 4
-hyp = mathfox.cal.geo.hypotenuse(leg1, leg2)
+hyp = mf.cal.geo.hypotenuse(leg1, leg2)
 print(hyp)
 ```
 > **5.0** <br>
@@ -241,15 +241,15 @@ print(hyp)
 
 ---
 
-## Area
+## 🔳 Area
 
 ### Two dimensions
 
 ### • `square(side)`
 ```python
-import mathfox
+import mathfox as mf
 side = 2
-area = mathfox.cal.geo.area.two_dimensions.square(side)
+area = mf.cal.geo.area.two_dimensions.square(side)
 print(area)
 ```
 > **4**
@@ -258,10 +258,10 @@ print(area)
 
 ### • `rectangle(height, base)`
 ```python
-import mathfox
+import mathfox as mf
 height = 4
 base = 2
-area = mathfox.cal.geo.area.two_dimensions.rectangle(height, base)
+area = mf.cal.geo.area.two_dimensions.rectangle(height, base)
 print(area)
 ```
 > **8**
@@ -270,10 +270,10 @@ print(area)
 
 ### • `right_triangle(height, base)`
 ```python
-import mathfox
+import mathfox as mf
 height = 7
 base = 3
-area = mathfox.cal.geo.area.two_dimensions.right_triangle(height, base)
+area = mf.cal.geo.area.two_dimensions.right_triangle(height, base)
 print(area)
 ```
 > **10.5**
@@ -282,9 +282,9 @@ print(area)
 
 ### • `equilateral_triangle(side)`
 ```python
-import mathfox
+import mathfox as mf
 side = 6
-area = mathfox.cal.geo.area.two_dimensions.equilateral_triangle(side)
+area = mf.cal.geo.area.two_dimensions.equilateral_triangle(side)
 print(area)
 ```
 > **15.588457268119894**
@@ -293,9 +293,9 @@ print(area)
 
 ### • `pentagon(side)`
 ```python
-import mathfox
+import mathfox as mf
 side = 5
-area = mathfox.cal.geo.area.two_dimensions.pentagon(side)
+area = mf.cal.geo.area.two_dimensions.pentagon(side)
 print(area)
 ```
 > **43.01193501472417**
@@ -304,9 +304,9 @@ print(area)
 
 ### • `hexagon(side)`
 ```python
-import mathfox
+import mathfox as mf
 side = 6
-area = mathfox.cal.geo.area.two_dimensions.hexagon(side)
+area = mf.cal.geo.area.two_dimensions.hexagon(side)
 print(area)
 ```
 > **93.53074360871938**
@@ -315,10 +315,10 @@ print(area)
 
 ### • `polygon(side, sides)`
 ```python
-import mathfox
+import mathfox as mf
 side = 4
 sides = 7
-area = mathfox.cal.geo.area.two_dimensions.polygon(side, sides)
+area = mf.cal.geo.area.two_dimensions.polygon(side, sides)
 print(area)
 ```
 > **58.14259910402543**
@@ -327,9 +327,9 @@ print(area)
 
 ### • `circle(radius)`
 ```python
-import mathfox
+import mathfox as mf
 radius = 2
-area = mathfox.cal.geo.area.two_dimensions.circle(radius)
+area = mf.cal.geo.area.two_dimensions.circle(radius)
 print(area)
 ```
 > **12.5663706143591724639918538741767406463623046875**
@@ -340,9 +340,9 @@ print(area)
 
 ### • `cube(edge)`
 ```python
-import mathfox
+import mathfox as mf
 edge = 5
-area = mathfox.cal.geo.area.three_dimensions.cube(edge)
+area = mf.cal.geo.area.three_dimensions.cube(edge)
 print(area)
 ```
 > **125**
@@ -351,11 +351,11 @@ print(area)
 
 ### • `parallelepiped(height, width, depth)`
 ```python
-import mathfox
+import mathfox as mf
 height = 5
 width = 4
 depth = 3
-area = mathfox.cal.geo.area.three_dimensions.parallelepiped(height, width, depth)
+area = mf.cal.geo.area.three_dimensions.parallelepiped(height, width, depth)
 print(area)
 ```
 > **60**
@@ -364,10 +364,10 @@ print(area)
 
 ### • `cylinder(height, radius)`
 ```python
-import mathfox
+import mathfox as mf
 height = 5
 radius = 4
-area = mathfox.cal.geo.area.three_dimensions.cylinder(height, radius)
+area = mf.cal.geo.area.three_dimensions.cylinder(height, radius)
 print(area)
 ```
 > **251.327412287183449279837077483534812927246093750**
@@ -376,23 +376,23 @@ print(area)
 
 ### • `sphere(radius)`
 ```python
-import mathfox
+import mathfox as mf
 radius = 6
-area = mathfox.cal.geo.area.three_dimensions.sphere(radius)
+area = mf.cal.geo.area.three_dimensions.sphere(radius)
 print(area)
 ```
 > **452.389342116930208703706739470362663269042968750**
 
 <br>
 
-## Trigonometry
+## 📐 Trigonometry
 
 ### • `sin(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = 30
-sin1 = mathfox.cal.geo.trigo.sin(num)
-sin2 = mathfox.cal.geo.trigo.sin(num, type='radians')
+sin1 = mf.cal.geo.trigo.sin(num)
+sin2 = mf.cal.geo.trigo.sin(num, type='radians')
 print(sin1)
 print(sin2)
 ```
@@ -403,10 +403,10 @@ print(sin2)
 
 ### • `cos(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = 45
-cos1 = mathfox.cal.geo.trigo.cos(num)
-cos2 = mathfox.cal.geo.trigo.cos(num, type='radians')
+cos1 = mf.cal.geo.trigo.cos(num)
+cos2 = mf.cal.geo.trigo.cos(num, type='radians')
 print(cos1)
 print(cos2)
 ```
@@ -417,10 +417,10 @@ print(cos2)
 
 ### • `tan(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = 60
-tan1 = mathfox.cal.geo.trigo.tan(num)
-tan2 = mathfox.cal.geo.trigo.tan(num, type='radians')
+tan1 = mf.cal.geo.trigo.tan(num)
+tan2 = mf.cal.geo.trigo.tan(num, type='radians')
 print(tan1)
 print(tan2)
 ```
@@ -431,10 +431,10 @@ print(tan2)
 
 ### • `arcsin(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = 1
-arcsin1 = mathfox.cal.geo.trigo.arcsin(num)
-arcsin2 = mathfox.cal.geo.trigo.arcsin(num, type='radians')
+arcsin1 = mf.cal.geo.trigo.arcsin(num)
+arcsin2 = mf.cal.geo.trigo.arcsin(num, type='radians')
 print(arcsin1)
 print(arcsin2)
 ```
@@ -445,10 +445,10 @@ print(arcsin2)
 
 ### • `arccos(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = -1
-arccos1 = mathfox.cal.geo.trigo.arccos(num)
-arccos2 = mathfox.cal.geo.trigo.arccos(num, type='radians')
+arccos1 = mf.cal.geo.trigo.arccos(num)
+arccos2 = mf.cal.geo.trigo.arccos(num, type='radians')
 print(arccos1)
 print(arccos2)
 ```
@@ -459,10 +459,10 @@ print(arccos2)
 
 ### • `arctan(num)`
 ```python
-import mathfox
+import mathfox as mf
 num = 1
-arctan1 = mathfox.cal.geo.trigo.arctan(num)
-arctan2 = mathfox.cal.geo.trigo.arctan(num, type= 'radians')
+arctan1 = mf.cal.geo.trigo.arctan(num)
+arctan2 = mf.cal.geo.trigo.arctan(num, type= 'radians')
 print(arctan1)
 print(arctan2)
 ```
@@ -473,10 +473,10 @@ print(arctan2)
 
 ### • `csc(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = 30
-csc1 = mathfox.cal.geo.trigo.csc(num)
-csc2 = mathfox.cal.geo.trigo.csc(num, type='radians')
+csc1 = mf.cal.geo.trigo.csc(num)
+csc2 = mf.cal.geo.trigo.csc(num, type='radians')
 print(csc1)
 print(csc2)
 ```
@@ -487,10 +487,10 @@ print(csc2)
 
 ### • `sec(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = 45
-sec1 = mathfox.cal.geo.trigo.sec(num)
-sec2 = mathfox.cal.geo.trigo.sec(num, type='radians')
+sec1 = mf.cal.geo.trigo.sec(num)
+sec2 = mf.cal.geo.trigo.sec(num, type='radians')
 print(sec1)
 print(sec2)
 ```
@@ -501,10 +501,10 @@ print(sec2)
 
 ### • `cot(num, type='degrees')`
 ```python
-import mathfox
+import mathfox as mf
 num = 60
-cot1 = mathfox.cal.geo.trigo.cot(num)
-cot2 = mathfox.cal.geo.trigo.cot(num, type='radians')
+cot1 = mf.cal.geo.trigo.cot(num)
+cot2 = mf.cal.geo.trigo.cot(num, type='radians')
 print(cot1)
 print(cot2)
 ```
@@ -513,13 +513,13 @@ print(cot2)
 
 ---
 
-## Number
+## 1️⃣ Number
 3 functions and 1 class
 
 ### • `inf`
 ```python
-import mathfox
-inf = mathfox.number.inf
+import mathfox as mf
+inf = mf.number.inf
 print(1 < inf)
 ```
 > **True**
@@ -528,9 +528,9 @@ print(1 < inf)
 
 ### • `prime(count)`
 ```python
-import mathfox
+import mathfox as mf
 count = 5
-primes = mathfox.number.prime(count)
+primes = mf.number.prime(count)
 print(primes)
 ```
 > **[2, 3, 5, 7, 11]**
@@ -539,9 +539,9 @@ print(primes)
 
 ### • `pi(precision=48)`
 ```python
-import mathfox
-pi1 = mathfox.number.pi()
-pi2 = mathfox.number.pi(5)
+import mathfox as mf
+pi1 = mf.number.pi()
+pi2 = mf.number.pi(5)
 print(f'PI1: {pi1}\nPI2: {pi2}')
 ```
 > **PI1: 3.141592653589793115997963468544185161590576171875** <br>
@@ -551,9 +551,9 @@ print(f'PI1: {pi1}\nPI2: {pi2}')
 
 ### • `e(precision=48)`
 ```python
-import mathfox
-e1 = mathfox.number.e()
-e2 = mathfox.number.e(5)
+import mathfox as mf
+e1 = mf.number.e()
+e2 = mf.number.e(5)
 print(f'e1: {e1}\ne: {e2}')
 ```
 > **e1: 2.718281828459045235360287471352662497757247093699** <br>
@@ -563,9 +563,9 @@ print(f'e1: {e1}\ne: {e2}')
 
 ### • `Fraction()`
 ```python
-import mathfox
-fraction1 = mathfox.number.Fraction(numerator=9, denominator=12)
-fraction2 = mathfox.number.Fraction(0.02)
+import mathfox as mf
+fraction1 = mf.number.Fraction(numerator=9, denominator=12)
+fraction2 = mf.number.Fraction(0.02)
 print(f'''
 fraction 1 = {fraction1}; result = {fraction1.result}
 fraction 2 = {fraction2}; result = {fraction2.result}
@@ -584,16 +584,16 @@ print(fraction1 > fraction2)
 
 ---
 
-## Numis
+## ❓ Numis
 3 functions
 
 ### • `isprime(num)`
 ```python
-import mathfox
+import mathfox as mf
 num1 = 3
 num2 = 10
-isprime1 = mathfox.numis.isprime(num1)
-isprime2 = mathfox.numis.isprime(num2)
+isprime1 = mf.numis.isprime(num1)
+isprime2 = mf.numis.isprime(num2)
 print(f'num1: {isprime1}\nnum2: {isprime2}')
 ```
 > **num1: True** <br>
@@ -603,13 +603,13 @@ print(f'num1: {isprime1}\nnum2: {isprime2}')
 
 ### • `isint(num, decimal=True)`
 ```python
-import mathfox
+import mathfox as mf
 num1 = 5
 num2 = 2.5
 num3 = 4.2
-isint1 = mathfox.numis.isint(num1)
-isint2 = mathfox.numis.isint(num2, decimal=False)
-isint3 = mathfox.numis.isint(num3)
+isint1 = mf.numis.isint(num1)
+isint2 = mf.numis.isint(num2, decimal=False)
+isint3 = mf.numis.isint(num3)
 print(f'num1: {isint1}\nnum2: {isint2}\nnum3: {isint3}')
 ```
 > **num1: True** <br>
@@ -620,13 +620,13 @@ print(f'num1: {isint1}\nnum2: {isint2}\nnum3: {isint3}')
 
 ### • `isdecimal(num, comma=False, convert=False, integer=True decimal_places=False)`
 ```python
-import mathfox
+import mathfox as mf
 num1 = 5.84
 num2 = '2,5'
 num3 = 4
-isdecimal1, decimal_places = mathfox.numis.isdecimal(num1, decimal_places=True)
-isdecimal2, covert = mathfox.numis.isdecimal(num2, convert=True, comma=True)
-isdecimal3 = mathfox.numis.isdecimal(num3, integer=False)
+isdecimal1, decimal_places = mf.numis.isdecimal(num1, decimal_places=True)
+isdecimal2, covert = mf.numis.isdecimal(num2, convert=True, comma=True)
+isdecimal3 = mf.numis.isdecimal(num3, integer=False)
 print(f'Num1: {isdecimal1}; decimal places: {decimal_places}\nNum2: {isdecimal2}; convert: {covert}\nNum3: {isdecimal3}')
 ```
 > **Num1: True; decimal places: 2** <br>
