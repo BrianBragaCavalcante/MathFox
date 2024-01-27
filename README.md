@@ -68,7 +68,7 @@ import mathfox as mf
 
 ## 💾 Installation
 
-### 🐍 PYPI
+### <img height="32" width="32" src="https://cdn.simpleicons.org/python" /> PIP
 Open **CMD** and write:
 ```
 pip install --upgrade mathfox
@@ -79,7 +79,7 @@ pip install --upgrade mathfox
 pip install --upgrade --pre mathfox
 ```
 
-### 🐱‍💻Git
+### <img height="32" width="32" src="https://cdn.simpleicons.org/git" /> Git
 1. Open **CMD** and write:
 ```
 git clone https://github.com/PipocaFox/MathFox
